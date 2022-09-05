@@ -1,0 +1,23 @@
+body{
+    margin:0
+}
+.container{
+display:flex;
+flex-direction:row;    
+}
+.redd{
+height:100vh;
+width:50vw;
+background-color:red;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.bluee{
+height:100vh;
+width:50vw;
+background-color:cyan ;
+display:flex;
+justify-content:center;
+align-items:center;
+}

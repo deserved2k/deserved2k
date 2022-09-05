@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <div class="container">
+  <div class="redd">
+  <button onclick="red()">Click</button></div>
+  <div class="bluee">
+<button onclick="blue()">Click</button></div></div>
+  </body>
+  <script>
+    const red = () => {
+     document.getElementsByClassName('redd').style.width=
+     Number(document.getElementsByClassName('redd').style.width.split("px")[0])+
+     50 + "px";
+     document.getElementsByClassName('bluee').style.width=
+     Number(document.getElementsByClassName('bluee').style.width.split("px")[0])-
+     50 + "px"
+    }
+    const blue = () => {
+     document.getElementsByClassName('bluee').style.width=
+     Number(document.getElementsByClassName('bluee').style.width.split("px")[0])+
+     50 + "px";
+     document.getElementsByClassName('redd').style.width=
+     Number(document.getElementsByClassName('redd').style.width.split("px")[0])-
+     50 + "px"
+    }
+  </script>
+</html>
